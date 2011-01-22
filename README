@@ -63,6 +63,9 @@ ALGORITHM
       an ordinary quad tree if the distribution of data is very different
       from uniformity. If in doubt, benchmark.
 
+    * If the data is uniform but inserted in random order, the MQT will at
+      best be equal in performance to a quad tree.
+
     * Filling a dynamically growing MQT has slightly more overhead than
       filling a dynamically growing quad tree due to the median calculation,
       but it is neither algorithmically slower nor necessarily slower in
