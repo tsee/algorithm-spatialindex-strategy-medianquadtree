@@ -105,6 +105,11 @@ benchmark.
 
 =item *
 
+If the data is uniform but inserted in random order, the MQT will at best be
+equal in performance to a quad tree.
+
+=item *
+
 Filling a dynamically growing MQT has slightly more overhead than filling a dynamically
 growing quad tree due to the median calculation, but it is neither algorithmically
 slower nor necessarily slower in practice. Algorithmically, splitting a
