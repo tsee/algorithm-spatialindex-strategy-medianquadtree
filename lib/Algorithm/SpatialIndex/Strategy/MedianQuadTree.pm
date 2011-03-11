@@ -1,5 +1,5 @@
 package Algorithm::SpatialIndex::Strategy::MedianQuadTree;
-use 5.008008;
+use 5.008005;
 use strict;
 use warnings;
 use Carp qw(croak);
