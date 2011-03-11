@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp qw(croak);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Algorithm::SpatialIndex::Strategy::QuadTree qw(:all);
 use parent 'Algorithm::SpatialIndex::Strategy::QuadTree';
@@ -140,7 +140,7 @@ Steffen Mueller, E<lt>smueller@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2010 by Steffen Mueller
+Copyright (C) 2010-2011 by Steffen Mueller
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.10.1 or,
