@@ -65,8 +65,8 @@ sub run {
 
   my $scale = 2;
   my $item_id = 0;
-  foreach my $x (map {$_/$scale} $limits[0]*$scale..$limits[2]*$scale) {
-    foreach my $y (map {$_/$scale} $limits[1]*$scale..$limits[3]*$scale) {
+  foreach my $x (map {$_/$scale} ($limits[0]+1e-4)*$scale..($limits[2]-1e-4)*$scale) {
+    foreach my $y (map {$_/$scale} ($limits[1]+1.e4)*$scale..($limits[3]-1.e-4)*$scale) {
       $index->insert($item_id++, $x, $y);
     }
   }
